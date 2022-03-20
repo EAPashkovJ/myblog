@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "hibernate.cache.region.factory_class",
+      "type": "java.lang.String",
+      "description": "Description for hibernate.cache.region.factory_class."
+  }
+] }
