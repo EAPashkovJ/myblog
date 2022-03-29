@@ -4,5 +4,57 @@
       "name": "hibernate.cache.region.factory_class",
       "type": "java.lang.String",
       "description": "Description for hibernate.cache.region.factory_class."
-  }
-] }
+    },
+    {
+      "name": "-Dmail.mime.allowutf8",
+      "type": "java.lang.String",
+      "description": "Description for -Dmail.mime.allowutf8."
+    },
+    {
+      "name": "-Dmail.mime.allowutf8",
+      "type": "java.lang.String",
+      "description": "Description for -Dmail.mime.allowutf8."
+    },
+    {
+      "name": "upload.path",
+      "type": "java.lang.String",
+      "description": "Description for upload.path."
+    },
+    {
+      "name": "session.setProperty("
+      mail.mime.address.strict
+      ",",
+      "type": "java.lang.String",
+      "description": "Description for session.setProperty("
+      mail.mime.address.strict
+      ",."
+    },
+    {
+      "name": "session.setProperty("
+      mail.mime.address.strict
+      ",",
+      "type": "java.lang.String",
+      "description": "Description for session.setProperty("
+      mail.mime.address.strict
+      ",."
+    },
+    {
+      "name": "session.setProperty("
+      mail.mime.address.strict
+      ",",
+      "type": "java.lang.String",
+      "description": "Description for session.setProperty("
+      mail.mime.address.strict
+      ",."
+    },
+    {
+      "name": "mail.mime.address.strict",
+      "type": "java.lang.String",
+      "description": "Description for mail.mime.address.strict."
+    },
+    {
+      "name": "-Dmail.mime.allowutf8",
+      "type": "java.lang.String",
+      "description": "Description for -Dmail.mime.allowutf8."
+    }
+  ] }

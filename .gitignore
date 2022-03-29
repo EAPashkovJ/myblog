@@ -1,2 +1,6 @@
 # Project exclude paths
-/target/
+/target/!/.idea/
+!/.jpb/
+!/uploads/
+!/src/main/resources/application.properties
+!/src/main/resources/templates/userMessages.ftl
