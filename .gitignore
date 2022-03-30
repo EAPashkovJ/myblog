@@ -3,5 +3,5 @@
 !/.jpb/
 !/uploads/
 !/src/main/resources/application.properties
-!/src/main/resources/templates/userMessages.ftl
-!/src/main/resources/application.properties
+!/.idea/
+!/src/test/
