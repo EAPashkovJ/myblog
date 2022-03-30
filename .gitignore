@@ -2,6 +2,7 @@
 /target/!/.idea/
 !/.jpb/
 !/uploads/
-!/src/main/resources/application.properties
+
 !/.idea/
 !/src/test/
+!/src/main/resources/application.properties
