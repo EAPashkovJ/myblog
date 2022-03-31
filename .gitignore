@@ -1,11 +1,1 @@
-# Project exclude paths
-!/src/main/resources/application.properties
-
-!/src/main/resources/META-INF/
-
-!/.jpb/
-
-!/.idea/
-
-!/"/
 
