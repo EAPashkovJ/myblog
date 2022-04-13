@@ -1,5 +1,8 @@
 package com.example.myblog.domain;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -32,10 +35,6 @@ public class User implements UserDetails {
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getUsername() {

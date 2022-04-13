@@ -1,3 +1,4 @@
+
 {
   "properties": [
     {
@@ -6,7 +7,7 @@
       "description": "Description for hibernate.cache.region.factory_class."
     },
     {
-      "name": "-Dmail.mime.allowutf8",
+      "name": "-Dmail.mime.allowuasci",
       "type": "java.lang.String",
       "description": "Description for -Dmail.mime.allowutf8."
     },
@@ -56,5 +57,10 @@
       "name": "-Dmail.mime.allowutf8",
       "type": "java.lang.String",
       "description": "Description for -Dmail.mime.allowutf8."
+    },
+    {
+      "name": "mail.debug",
+      "type": "java.lang.String",
+      "description": "Description for mail.debug."
     }
   ] }

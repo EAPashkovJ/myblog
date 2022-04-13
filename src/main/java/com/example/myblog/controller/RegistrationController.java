@@ -16,7 +16,7 @@ import java.util.Map;
 
 @Controller
 public class RegistrationController {
-    @Autowired
+   @Autowired
     private UserService userService;
 
     @GetMapping("/registration")
@@ -41,7 +41,7 @@ public class RegistrationController {
         if (isActivated) {
             model.addAttribute("message", "User successfully activated");
         } else {
-            model.addAttribute("mssage", "Activation code is not found!");
+            model.addAttribute("message", "Activation code is not found!");
         }
 
         return "login";

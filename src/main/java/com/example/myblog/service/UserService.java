@@ -4,7 +4,6 @@ package com.example.myblog.service;
 import com.example.myblog.domain.Role;
 import com.example.myblog.domain.User;
 import com.example.myblog.repos.UserRepo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -17,11 +16,14 @@ import java.util.UUID;
 @Service
 public
 class UserService implements UserDetailsService {
-    @Autowired
-    private UserRepo userRepo;
 
-    @Autowired
-    private MailSenderService mailSender;
+    private final UserRepo userRepo;
+    private final MailSenderService mailSender;
+
+    public UserService(UserRepo userRepo, MailSenderService mailSender) {
+        this.userRepo = userRepo;
+        this.mailSender = mailSender;
+    }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -42,9 +44,8 @@ class UserService implements UserDetailsService {
         userRepo.save(user);
 
         if (!StringUtils.isEmpty(user.getEmail())) {
-            String message = String.format(
-                    "Hello, %s! \n" +
-                            "Welcome to MyBlog. Please, visit next link: http://localhost:4000/activate/%s",
+            String message = String.format("Hello, %s!" +
+                            "Welcome to MyBlog. Please, visit next link: http://localhost:8080/activate/%s",
                     user.getUsername(),
                     user.getActivationCode()
             );

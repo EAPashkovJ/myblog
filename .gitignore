@@ -1,14 +1,10 @@
 # Project exclude paths
 /target/!/src/main/resources/application.properties
 /"/
-
 /.jpb/
-
 /.idea/
-
 /src/projectFiles/
-
 /src/test/
-
 /uploads/
 /src/main/resources/application.properties
+!/src/main/resources/application.properties
