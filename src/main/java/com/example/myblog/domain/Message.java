@@ -7,14 +7,14 @@ public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-// Поля текста блога
+    // Поля текста блога
     private String text;
     private String tag;
-// Поле авторства
+    // Поле авторства
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User author;
-// Поле загрузка файлов
+    // Поле загрузка файлов
     private String filename;
 
 

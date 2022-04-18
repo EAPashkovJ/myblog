@@ -21,12 +21,15 @@ import java.util.UUID;
 
 @Controller
 public class MainController {
-    @Autowired
-    private MessageRepo messageRepo;
+    private final MessageRepo messageRepo;
 
     // get file from properties
     @Value("${upload.path}")
     private String uploadPath;
+
+    public MainController(MessageRepo messageRepo) {
+        this.messageRepo = messageRepo;
+    }
 
     @GetMapping("/")
     public String greeting(Map<String, Object> model) {
