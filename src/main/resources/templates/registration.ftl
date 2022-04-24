@@ -4,5 +4,5 @@
 <@c.page>
     <div class="mb-3">ADD NEW USER</div>
     ${message!}
-    <@l.login "/registration" true />
+    <@l.login path="/registration" isRegisterForm=true />
 </@c.page>

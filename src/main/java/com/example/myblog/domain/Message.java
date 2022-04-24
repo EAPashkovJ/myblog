@@ -1,6 +1,9 @@
 package com.example.myblog.domain;
 
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class Message {
@@ -8,7 +11,10 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     // Поля текста блога
+    @NotBlank(message = "Please fill the message")
+    @Length(max = 255, message = "Message to long")
     private String text;
+    @Length(max = 255, message = "Message to long")
     private String tag;
     // Поле авторства
     @ManyToOne(fetch = FetchType.EAGER)
@@ -31,7 +37,7 @@ public class Message {
         return author != null ? author.getUsername() : "<none>";
     }
 
-    public User getAuthor() {
+    public User getAuthor(User user) {
         return author;
     }
 

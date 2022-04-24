@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 // Отправка подтверждения на почту
 @Service
 public class MailSenderService {
-    private JavaMailSender mailSender;
+    private final JavaMailSender mailSender;
 
     @Value("${spring.mail.username}")
     private String username;
