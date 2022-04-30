@@ -2,5 +2,5 @@
 /"/
 /.jpb/
 /src/main/resources/application.properties
-!/.idea/
-!/.jpb/
+/.idea/
+/uploads/
