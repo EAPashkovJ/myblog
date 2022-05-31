@@ -1,12 +1,9 @@
+<#import "parts/common.ftl" as c>
 
-<#--Delete this later 27/03/22-->
+<@c.page>
+    <#if isCurrentUser>
+        <#include "parts/messageEdit.ftl" />
+    </#if>
 
-<#--<#import "parts/common.ftl" as c>-->
-
-<#--<@c.page>-->
-<#--    <#if isCurrentUser>-->
-<#--        <#include "parts/messageEdit.ftl" />-->
-<#--    </#if>-->
-
-<#--    <#include "parts/messageEdit.ftl" />-->
-<#--</@c.page>-->
+    <#include "parts/messageList.ftl" />
+</@c.page>

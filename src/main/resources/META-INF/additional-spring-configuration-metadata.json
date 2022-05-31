@@ -41,5 +41,10 @@
       "name": "recaptcha.secret",
       "type": "java.lang.String",
       "description": "Description for recaptcha.secret."
+    },
+    {
+      "name": "allowPublicKeyRetrieval",
+      "type": "java.lang.String",
+      "description": "Description for allowPublicKeyRetrieval."
     }
   ] }
