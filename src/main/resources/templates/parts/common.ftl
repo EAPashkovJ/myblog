@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
               integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
               crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
         <#--        add captcha to site-->
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -36,20 +37,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
             integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
             crossorigin="anonymous"></script>
+
+
     </body>
-<#------------Footer-------------->
 
-
-<#--   <div class="container">-->
-<#--       <footer class="footer">-->
-<#--           <ul class="nav justify-content-center border-bottom pb-3 mb-3">-->
-
-<#--             <a href="" target="_blank" class="ui-button"><i class="icon-hdd"></i></a>-->
-
-<#--           </ul>-->
-<#--           <p class="text-center text-muted">&copy; 2022 </p>-->
-<#--      </footer>-->
-<#--</div>-->
     </html>
 
 
