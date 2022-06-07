@@ -53,29 +53,30 @@
                     </#if>
                 </div>
             </div>
-        <div class="form-group row">
-            <label class="col-sm-3 col-form-label"></label>
-            <div class="col-md-6 col-md-offset-4">
-                <div class="g-recaptcha" data-sitekey="6Lf5iJgfAAAAAJVevwe0Ff6P0b7yGtkgk4pqdaoW"></div>
-                <#if captchaError??>
-                    <div class="alert alert-danger" role="alert">
-                        ${captchaError}
-                    </div>
-                </#if>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label"></label>
+                <div class="col-md-6 col-md-offset-4">
+                    <div class="g-recaptcha" data-sitekey="6Lf5iJgfAAAAAJVevwe0Ff6P0b7yGtkgk4pqdaoW"></div>
+                    <#if captchaError??>
+                        <div class="alert alert-danger" role="alert">
+                            ${captchaError}
+                        </div>
+                    </#if>
+                </div>
             </div>
-        </div>
         </#if>
 
         <div class="form-group row">
-            <label class="col-sm-3 col-form-label"></label>
-            <div class="col-md-6 col-md-offset-4">
-                <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-                <#if !isRegisterForm><a class="btn btn-outline-primary role="button" href="/registration">Add new
-                    user</a></#if>
-
-                <#--        <#if !isRegisterForm><a href="/registration">Add new user</a></#if>-->
+            <label class="col-md-3 col-md-offset-4"></label>
                 <button class="btn btn-primary"
                         type="submit"><#if isRegisterForm>Create<#else>Sign In</#if></button>
+
+
+            <div class="col-md-3 col-md-offset-4">
+                <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                <#if !isRegisterForm>
+                    <a class="btn btn-outline-primary role="bottom" href="/registration">Add new user</a>
+                </#if>
             </div>
         </div>
     </form>
