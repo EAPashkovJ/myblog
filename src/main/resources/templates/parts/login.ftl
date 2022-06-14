@@ -66,18 +66,25 @@
             </div>
         </#if>
 
-        <div class="form-group row">
+        <div class="d-grid gap-2 col-6 mx-auto">
             <label class="col-md-3 col-md-offset-4"></label>
-                <button class="btn btn-primary"
-                        type="submit"><#if isRegisterForm>Create<#else>Sign In</#if></button>
-
-
-            <div class="col-md-3 col-md-offset-4">
-                <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-                <#if !isRegisterForm>
-                    <a class="btn btn-outline-primary role="bottom" href="/registration">Add new user</a>
+            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+            <button class="btn btn-outline-info btn-lg"
+                    type="submit">
+                <#if isRegisterForm>
+                    Create
+                <#else>
+                    Sign In
                 </#if>
-            </div>
+            </button>
+
+
+<#--            <div class="col-md-3 col-md-offset-4">-->
+<#--                <input type="hidden" name="_csrf" value="${_csrf.token}"/>-->
+<#--                <#if !isRegisterForm>-->
+<#--                    <a class="btn btn-outline-primary" role="buttom" href="/registration">Add new user</a>-->
+<#--                </#if>-->
+<#--            </div>-->
         </div>
     </form>
 </#macro>

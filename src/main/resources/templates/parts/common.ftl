@@ -3,7 +3,7 @@
     <html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8">
-        <title>My Blog</title>
+        <title>Home</title>
         <link rel="stylesheet" href="/static/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
