@@ -41,6 +41,6 @@
     </body>
     </html>
 
-
+    <#include "footer.ftl">
 </#macro>
 
