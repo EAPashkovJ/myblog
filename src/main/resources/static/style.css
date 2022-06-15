@@ -6,7 +6,7 @@ body::before {
     top: 0;
     bottom: 0;
     z-index: -1;
-     /*Параметры фона*/
+    /*Параметры фона*/
     background: url(
     https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?t=st=1654082027~exp=1654082627~hmac=18ee987f201311a30984eba910791e5047ea3ee59da29459af80e7db026fbaf1&w=1480
     ) center / cover no-repeat;
@@ -23,8 +23,9 @@ body {
 }
 
 .bg-text {
-    text-align:  center
+    text-align: center
 }
+
 .btn {
     /*display: flex;*/
     /*align-items: center;*/
@@ -32,15 +33,14 @@ body {
 
     display: inline-block;
 }
-.footer{
+
+.footer {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 80px;
 }
-button {
-    border-radius: 0;
-}
+
 
 

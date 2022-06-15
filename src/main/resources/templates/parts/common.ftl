@@ -39,8 +39,7 @@
             crossorigin="anonymous"></script>
 
     </body>
-    </html>
+    </html
 
-    <#include "footer.ftl">
 </#macro>
 

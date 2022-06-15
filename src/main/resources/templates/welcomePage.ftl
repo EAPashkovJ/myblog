@@ -23,5 +23,6 @@
     <#else>
     </#if>
 
+    <#include "parts/footer.ftl">
 
 </@c.page>

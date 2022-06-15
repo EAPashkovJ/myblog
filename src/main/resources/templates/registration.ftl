@@ -8,4 +8,6 @@
     ${message!}
     <@l.login path="/registration" isRegisterForm=true />
 
+    <#include "parts/footer.ftl">
+
 </@c.page>

@@ -13,6 +13,7 @@
         </div>
     </#if>
     <@l.login "/login" false/>
+    <#include "parts/footer.ftl">
 </@c.page>
 
 
