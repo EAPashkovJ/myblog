@@ -12,7 +12,7 @@
             <div class="text-left">
             <span class="text-muted">Gmail: eapashkov@gmail.com <br>
                 Tel: +7-981-778-61-20
-            </span> <br>
+            </span>
             </div>
         </div>
         <#---->

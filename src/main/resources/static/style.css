@@ -41,6 +41,9 @@ body {
     width: 100%;
     height: 80px;
 }
-
+.img-fluid. {
+    max-width: 50%;
+    height: auto;
+}
 
 
