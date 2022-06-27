@@ -34,7 +34,14 @@
                 </div>
             </div>
             <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-            <input type="hidden" name="id" value="<#if message??>${message.id }</#if>"/>
+            <input type="hidden" name="id" value="
+
+<#--            Баг, если Введите сообщение оставить пустым , решение остается открытым-->
+                <#if message??>
+                ${message.id}
+
+                   </#if>"/>
+
 
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Save message</button>
