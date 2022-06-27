@@ -2,7 +2,7 @@ package com.example.myblog.service;
 
 import com.example.myblog.domain.Role;
 import com.example.myblog.domain.User;
-import com.example.myblog.repos.UserRepo;
+import com.example.myblog.repository.UserRepo;
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;
 import org.mockito.ArgumentMatchers;
