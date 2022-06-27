@@ -9,10 +9,10 @@
 
             <div class="form-group">
                 <input type="text" class="form-control"
-                       value="<#if message??>${message.tag}</#if>" name="tag" placeholder="Заголовок">
-                <#if tagError??>
+                       value="<#if message??>${message.title}</#if>" name="title" placeholder="Заголовок">
+                <#if titleError??>
                     <div class="invalid-feedback">
-                        ${tagError}
+                        ${titleError}
                     </div>
                 </#if>
             </div>

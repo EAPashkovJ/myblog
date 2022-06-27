@@ -5,7 +5,7 @@
 
 <#--    <div class="card mb-3">-->
 <#--        <div class="card-body">-->
-<#--            <h5 class="card-title"><i>${message.tag}</i></h5>-->
+<#--            <h5 class="card-title"><i>${message.title}</i></h5>-->
 <#--            <p class="card-text"><span>${message.text}</span><br/></p>-->
 <#--        </div>-->
 <#--        <#if message.filename??>-->
@@ -31,7 +31,7 @@
 <#--    No message-->
 
     <div class="jumbotron">
-        <h1 class="display-3">${message.tag}</h1>
+        <h1 class="display-3">${message.title}</h1>
         <p class="lead">
 
         </p>
