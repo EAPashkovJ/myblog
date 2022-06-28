@@ -9,7 +9,7 @@ create table message
     id       bigint       not null,
     filename varchar(255),
     title      varchar(255),
-    text     varchar(255),
+    text     text(255),
     user_id  bigint,
     primary key (id)
 ) engine = InnoDB;
